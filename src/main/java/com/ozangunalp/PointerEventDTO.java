@@ -2,9 +2,10 @@ package com.ozangunalp;
 
 import io.quarkus.mongodb.panache.PanacheMongoEntity;
 import io.quarkus.mongodb.panache.common.MongoEntity;
+import io.quarkus.mongodb.panache.reactive.ReactivePanacheMongoEntity;
 
 @MongoEntity(collection = "PointerEvent")
-public class PointerEventDTO extends PanacheMongoEntity {
+public class PointerEventDTO extends ReactivePanacheMongoEntity {
 
     public String userId;
     public String sessionId;
